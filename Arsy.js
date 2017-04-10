@@ -5,7 +5,6 @@
 //Define the Arsy object to store variables
 
 // Random function to arrays, will return a random value from and array
-    'use strict'
     Array.prototype.random = function(){
         return this[Math.floor(Math.random() * this.length)] // Return a value from itself
     }
@@ -23,12 +22,12 @@
     //Return the array switching 2 values
 
     Array.prototype.switch = function(indexOfTheFirstItem , indexOfTheSecondtItem){ //It expects 2 parameters
-        arrayToSwitch = JSON.parse(JSON.stringify(this));
+        let arrayToSwitch = JSON.parse(JSON.stringify(this));
         if(typeof indexOfTheFirstItem == 'number' && typeof indexOfTheSecondtItem == 'number'){  //Check if the parameters are numbers
             if(indexOfTheFirstItem > (arrayToSwitch.length - 1) || indexOfTheFirstItem < 0 || indexOfTheSecondtItem > (arrayToSwitch.length - 1) || indexOfTheSecondtItem < 0){ //Check if the numbers are between the array length
                 console.log('%cThe given index must be between the length of the given array', 'color: #f00'); //Console.log and error if the numbers aren't in the array's length
             } else{
-                firsItem                                = arrayToSwitch[indexOfTheFirstItem],     // Save the firstItem
+                let firsItem                                = arrayToSwitch[indexOfTheFirstItem];     // Save the firstItem
                 arrayToSwitch[indexOfTheFirstItem]      = arrayToSwitch[indexOfTheSecondtItem],   // Set the firstIndex to the second item
                 arrayToSwitch[indexOfTheSecondtItem]    = firsItem;                      // Set the saved item to the second index
                 return arrayToSwitch;                                                    // Return the array updated
