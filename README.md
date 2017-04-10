@@ -54,6 +54,7 @@ You have 5 (for now ) buildin extra functions to Arrays
   ## Array.remove(element to remove, will it remove all the matches, or only the first one? (true or false expected))
 
   This will remove the first matched item, if true is given as second parameter, it will remove all the matched items, if no matches are found, it will return false
+  
   ``  [1,2,3,4,4].remove(4) `` will return ``[1,2,3,4]``
   
   ``  [1,2,3,4,4].remove(4,true) `` will return ``[1,2,3]``
