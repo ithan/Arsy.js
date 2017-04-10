@@ -5,7 +5,6 @@
 //Define the Arsy object to store variables
 
 // Random function to arrays, will return a random value from and array
-    'use strict'
     Array.prototype.random = function(){
         return this[Math.floor(Math.random() * this.length)] // Return a value from itself
     }
