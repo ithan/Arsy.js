@@ -5,6 +5,7 @@
 //Define the Arsy object to store variables
 
 // Random function to arrays, will return a random value from and array
+    'use strict'
     Array.prototype.random = function(){
         return this[Math.floor(Math.random() * this.length)] // Return a value from itself
     }
@@ -26,6 +27,7 @@
         if(typeof indexOfTheFirstItem == 'number' && typeof indexOfTheSecondtItem == 'number'){  //Check if the parameters are numbers
             if(indexOfTheFirstItem > (arrayToSwitch.length - 1) || indexOfTheFirstItem < 0 || indexOfTheSecondtItem > (arrayToSwitch.length - 1) || indexOfTheSecondtItem < 0){ //Check if the numbers are between the array length
                 console.log('%cThe given index must be between the length of the given array', 'color: #f00'); //Console.log and error if the numbers aren't in the array's length
+                eturn new Error('Incorrect number')
             } else{
                 let firsItem                                = arrayToSwitch[indexOfTheFirstItem];     // Save the firstItem
                 arrayToSwitch[indexOfTheFirstItem]      = arrayToSwitch[indexOfTheSecondtItem],   // Set the firstIndex to the second item
@@ -34,6 +36,7 @@
             }
         } else {
             console.log('%cThe given index are incorrect, they must be a number.', 'color: #f00');  //If the parameters are wrong, console.log and error
+            return new Error('Number expected')
         }
     }
 
@@ -81,5 +84,5 @@
         } else {
             return false
         }
-        
+
     }
