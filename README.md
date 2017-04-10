@@ -1,7 +1,7 @@
 # Arsy.js
 Small library to add additional functionality to arrays 
 
-You have 5 (for now ) buildin extra functions to Arrays
+You have 6 (for now ) buildin extra functions to Arrays
 ```
   - Random
   - shufle
