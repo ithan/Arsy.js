@@ -3,7 +3,7 @@ Small library to add additional functionality to arrays
 
 You have 8 (for now ) buildin extra functions to Arrays
 ```
-  - Random
+  - random
   - shufle
   - switch
   - window
