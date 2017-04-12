@@ -61,6 +61,20 @@ You have 6 (for now ) buildin extra functions to Arrays
   
   ``  [1,2,3,4,4].remove(5,true) `` will return ``false``
   
+    ___________________________________________________________
+  ## Array.next(value)
+
+  Return the next element in the array from the first match of the given element
+
+  ``  [1,2,3,4,5,6].next(2) `` will return `` 2``
   
+  ___________________________________________________________
+  ## Array.prev(value)
+
+  Return the previus element in the array from the first match of the given element
+
+  ``  [1,2,3,4,5,6].prev(2) `` will return `` 1``
+  
+  ___________________________________________________________
   
  
