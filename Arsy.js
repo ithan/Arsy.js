@@ -112,7 +112,7 @@
    //Return the previus value
    // --------------------------------------
 
-   Array.prototype.previus = function(currentValue){                                               // Next function definition
+   Array.prototype.prev = function(currentValue){                                               // Next function definition
         if(this.indexOf(currentValue) > -1 && this.indexOf(currentValue) > 0){                       // If the value exist and is less then the length of the array
             return this[this.indexOf(currentValue) - 1]                                                 // return the next value
         } else {                                                                                    // If not
