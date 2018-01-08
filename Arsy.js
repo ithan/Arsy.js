@@ -37,7 +37,7 @@
                 console.log('%cThe given index must be between the length of the given array', 'color: #f00');                                                                              // Console.log and error if the numbers aren't in the array's length
                 return new Error('Incorrect number');                                                                                                                                       // Return Error
             } else{                                                                                                                                                                     // If they are then
-                let firsItem                                = arrayToSwitch[indexOfTheFirstItem];                                                                                           // Save the firstItem
+                let firsItem                            = arrayToSwitch[indexOfTheFirstItem];                                                                                           // Save the firstItem
                 arrayToSwitch[indexOfTheFirstItem]      = arrayToSwitch[indexOfTheSecondtItem],                                                                                             // Set the firstIndex to the second item
                 arrayToSwitch[indexOfTheSecondtItem]    = firsItem;                                                                                                                         // Set the saved item to the second index
                 return arrayToSwitch;                                                                                                                                                       // Return the array updated
@@ -65,7 +65,7 @@
 
     Array.prototype.search = function(element){                             // Search function definition
         let arrayElementIndex = [];                                             // Create the array to return
-        this.forEach( (val,index)=>{                                            // Loop thrue the array
+        this.map( (val,index)=>{                                            // Loop thrue the array
             if(element === val){ arrayElementIndex.push(index) }                    // If the element match the value of the array, return the index of the value
         });                                                                     // End of loop
         if(arrayElementIndex.length > 0){                                       // If the array length is higher then 0
