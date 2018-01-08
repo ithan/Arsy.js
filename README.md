@@ -68,7 +68,7 @@ You have 8 (for now ) buildin extra functions to Arrays
 
   Return the next element in the array from the first match of the given element
 
-  ``  [1,2,3,4,5,6].next(2) `` will return `` 2``
+  ``  [1,2,3,4,5,6].next(2) `` will return `` 3``
   
   ___________________________________________________________
   ## Array.prev(value)
