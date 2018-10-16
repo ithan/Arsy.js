@@ -9,8 +9,6 @@ You have 8 (for now ) buildin extra functions to Arrays
   - window
   - search
   - remove
-  - next
-  - prev
 ```
 
 ### Any of this function will modify the array itself, they only will return the expected value
